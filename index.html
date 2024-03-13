@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Example</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box; 
+    margin-bottom: 30px;
+}
+
+.branding img {
+    max-width: 100px;
+    border-radius: 5px;
+    animation: fadeInLeft 1s ease-out;
+}
+
+.branding h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    flex: 1; 
+}
+
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    margin-top: 0px;
+    height: 95px;
+}
+
+        .tabs {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #3498db;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 15px 30px;
+            color: #fff;
+            border: none;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+
+        .tab:hover {
+            background-color: #297fb8;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            text-align: left;
+            animation: fadeInUp 0.5s ease-out;
+            margin-bottom: 200px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .design-download a,
+        .implementation-buttons button {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .design-download a:hover,
+        .implementation-buttons button:hover {
+            background-color: #297fb8;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
+            margin-top: 0px;
+            position: fixed; 
+    bottom: 0; 
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+      
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(170px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        #designTab img {
+    
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #297fb8;
+}
+header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="branding">
+            
+            <img src="image/it1.png" alt="Logo" >
+            <h1>
+                <div class="implementation-buttons">
+                    <button onclick="openLink('home.html')">Home</button>
+                    <button onclick="openLink('about.html')">About</button>
+                    
+                    <button onclick="openLink('technical.html')">Technical</button>
+                    <button onclick="openLink('StyleGuide.html')">Style Guide</button>
+                    <button onclick="openLink('groupDiary.html')">GroupDiary</button>
+                  
+                    <button onclick="openLink('project.html')">Project</button>
+                    <button onclick="openLink('result.html')">Result</button>
+            
+                </div>
+                <span class="icon">🌟</span>
+                Project Website Nhóm 18
+            </h1>
+        </div>
+       
+          
+        
+    </header>
+    
+    <img src="image/it.jpg" alt="Kitten Image" >
+    <ul class="tabs">
+        <li class="tab" onclick="changeTab('requirement')">
+            <span class="icon">📋</span>
+            Requirement
+        </li>
+        <li class="tab" onclick="changeTab('design')">
+            <span class="icon">🎨</span>
+            Design
+        </li>
+        <li class="tab" onclick="changeTab('implementation')">
+            <span class="icon">⚙️</span>
+            Implementation
+        </li>
+    </ul>
+
+    <div id="requirementTab" class="tab-content">
+        <h2>Các chức năng chính của project</h2>
+        <p>Chức năng About : Do Nguyễn Thành Phước đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 16 tháng 11 năm 2023 và kết thúc ngày 8 tháng 1 năm 2024</p>
+        <p>Chức năng Home : Do Nguyễn Thành Phước đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 3 tháng 2 năm 2024 và kết thúc ngày 4 tháng 2 năm 2024 </p>
+        <p>Chức năng Technical : Do Nguyễn Thị Mỹ Dung đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 3 tháng 2 năm 2024 và kết thúc ngày 4 tháng 2 năm 2024 </p>
+        <p>Chức năng Movie : Do Nguyễn Thị Mỹ Dung và Võ Tấn Tài đề xuất và thực hiện(Trong đó Nguyễn Thị Mỹ Dung đảm nhận vai trò làm chức năng Css và bạn Võ Tấn Tài đảm nhận làm html và JavaScript) . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 16 tháng 11 năm 2023 và kết thúc ngày 8 tháng 1 năm 2024 </p>
+        <p>Chức năng Style Guide : Do Võ Tấn Tài đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 3 tháng 2 năm 2024 và kết thúc ngày 4 tháng 2 năm 2024 </p>
+        <p>Chức năng Trang chủ Website Giải trí : Do Phan Xuân Lãnh đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 16 tháng 11 năm 2023 và kết thúc ngày 8 tháng 1 năm 2024 </p>
+        
+        <p>Chức năng GroupDiary : Do Phan Xuân Lãnh  đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 16 tháng 11 năm 2023 và kết thúc ngày 8 tháng 2 năm 2024 </p>
+        <p>Chức năng Project : Do Phan Xuân Lãnh  đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 3 tháng 2 năm 2024 và kết thúc ngày 4 tháng 2 năm 2024 </p>
+        <p>Chức năng Result : Do Phan Xuân Lãnh  đề xuất và thực hiện . Thời gian dự kiến bắt đầu và hoàn thành từ ngày 3 tháng 2 năm 2024 và kết thúc ngày 4 tháng 2 năm 2024 </p>
+    
+    </div>
+
+    <div id="designTab" class="tab-content">
+        <div class="design-download">
+            <p>Những thiết kế mình tập hợp được của các bạn</p>
+    
+            <div class="design-item">
+                <img src="image/22130142_Phan_Xuan_Lanh_trangchu_Webgiaitri.jpg" width="300px" height="400px" alt="Thiết kế Trang chủ website ">
+                <a href="image/22130142_Phan_Xuan_Lanh_trangchu_Webgiaitri.jpg" onclick="downloadDesign('image/22130142_Phan_Xuan_Lanh_trangchu_Webgiaitri.jpg')">Tải Thiết kế Trang chủ website giải trí</a>
+            </div>
+    
+            <div class="design-item">
+                <img src="image/22130142_Phan_Xuan_Lanh_Project.jpg" width="200px" height="300px" alt="Thiết kế Dự án">
+                <a href="image/22130142_Phan_Xuan_Lanh_Project.jpg" onclick="downloadDesign('image/22130142_Phan_Xuan_Lanh_Project.jpg')">Tải Thiết Project</a>
+            </div>
+    
+            <div class="design-item">
+                <img src="image/22130142_Phan_Xuan_Lanh_GroupDiary.jpg" width="250px" height="350px" alt="Thiết kế GroupDiary">
+                <a href="image/22130142_Phan_Xuan_Lanh_GroupDiary.jpg" onclick="downloadDesign('image/22130142_Phan_Xuan_Lanh_GroupDiary.jpg')">Tải Thiết kế GroupDiary</a>
+            </div>
+            <div class="design-item">
+                <img src="image/22130052_Bui_Thi_My_Dung_Technical.jpg" width="250px" height="350px" alt="Thiết kế Technical">
+                <a href="image/22130052_Bui_Thi_My_Dung_Technical.jpg" onclick="downloadDesign('image/22130052_Bui_Thi_My_Dung_Technical.jpg')">Tải Thiết kế Technical</a>
+            </div>
+            <div class="design-item">
+                <img src="image/22130223_Nguyen_Thanh_Phuoc_About.jpg" width="250px" height="350px" alt="Thiết kế About">
+                <a href="image/22130223_Nguyen_Thanh_Phuoc_About.jpg" onclick="downloadDesign('image/22130223_Nguyen_Thanh_Phuoc_About.jpg')">Tải Thiết kế About</a>
+            </div>
+            <div class="design-item">
+                <img src="image/22130142_Phan_Xuan_Lanh_Result.jpg" width="250px" height="350px" alt="Thiết kế ResuLt">
+                <a href="image/22130142_Phan_Xuan_Lanh_Result.jpg" onclick="downloadDesign('image/22130142_Phan_Xuan_Lanh_Result.jpg')">Tải Thiết kế Result</a>
+            </div>
+            <a href="#" onclick="downloadAllDesigns()">Download All Designs</a>
+        </div>
+    </div>
+    
+    <div id="implementationTab" class="tab-content">
+        <h2>Implementation Content</h2>
+        <div class="implementation-buttons">
+            <button onclick="openLink('home.html')">Home</button>
+            <button onclick="openLink('about.html')">About</button>
+            
+            <button onclick="openLink('technical.html')">Technical</button>
+            <button onclick="openLink('StyleGuide.html')">Style Guide</button>
+            <button onclick="openLink('groupDiary.html')">GroupDiary</button>
+          
+            <button onclick="openLink('project.html')">Project</button>
+            <button onclick="openLink('result.html')">Result</button>
+
+        </div>
+    </div>
+    <img src="image/it2.jfif" alt="Kitten Image">
+    <footer>
+        <p>&copy; 2024 My Tabbed Website. All rights reserved.</p>
+    </footer>
+    <button id="scrollToTopBtn">Cuộn lên trên</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          
+            document.querySelectorAll('.tab-content:not(#requirementTab)').forEach(function (tabContent) {
+                tabContent.style.display = 'none';
+            });
+        });
+
+        function changeTab(tabName) {
+           
+            document.querySelectorAll('.tab-content').forEach(function (tabContent) {
+                tabContent.classList.remove('active');
+                tabContent.style.display = 'none';
+            });
+
+            
+            var activeTabContent = document.getElementById(tabName + 'Tab');
+            activeTabContent.classList.add('active');
+            activeTabContent.style.display = 'block';
+        }
+
+        function downloadDesign(filename) {
+           
+            alert('Downloading ' + filename);
+        }
+
+        function downloadAllDesigns() {
+           
+            alert('Downloading All Designs');
+        }
+
+        function openLink(link) {
+            
+            window.open(link, '_blank');
+        }
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+     
+    </script>
+</body>
+
+</html>

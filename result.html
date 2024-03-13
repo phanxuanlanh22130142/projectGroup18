@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .column {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 50%; 
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #297fb8;
+        }
+        .implementation-buttons button {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .design-download a:hover,
+        .implementation-buttons button:hover {
+            background-color: #297fb8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="implementation-buttons">
+            <button onclick="openLink('home.html')">Home</button>
+            <button onclick="openLink('about.html')">About</button>
+            
+            <button onclick="openLink('technical.html')">Technical</button>
+            <button onclick="openLink('StyleGuide.html')">Style Guide</button>
+            <button onclick="openLink('groupDiary.html')">GroupDiary</button>
+          
+            <button onclick="openLink('project.html')">Project</button>
+            <button onclick="openLink('result.html')">Result</button>
+    
+        </div>
+    </header>
+
+    <main>
+        <div class="column">
+            <img src="image/lanh.jpg" alt="Thành Viên 1">
+            <h3>Nhóm trưởng</h3>
+            <h2>Phan Xuân Lãnh </h2>
+            <h3>Công việc(Hoàn thành) </h3>
+            <h3>Lãnh tự đánh giá 35% trên 100% lượng công việc </h3>
+            <button onclick="window.location.href = 'index.html';">Trang chủ web giải trí</button>
+            <button onclick="window.location.href = 'groupDiary.html';">GroupDiary</button>
+            <button onclick="window.location.href = 'project.html';">Project</button>
+            <button onclick="window.location.href = 'result.html';">Result</button>
+            
+            
+            <button onclick="window.location.href = 'about.html';">About(hỗ trợ tạo link)</button>
+            <button onclick="window.location.href = 'home.html';">Home(hỗ trợ tạo link)</button>
+            <button onclick="window.location.href = 'StyleGuide.html';">StyleGuide(hỗ trợ tạo link)</button>
+            <button onclick="window.location.href = 'technical.html';">Technical(hỗ trợ tạo link)</button>
+        </div>
+
+        <div class="column">
+            <img src="image/phuoc.jpg" alt="Thành Viên 2">
+            <h3>Thành viên 1</h3>
+            <h2>Nguyễn Thành Phước</h2>
+            <h3>Công việc (Hoàn thành)</h3>
+            <h3>Phước tự đánh giá 25% trên 100% lượng công việc </h3>
+            <button onclick="window.location.href = 'about.html';">About</button>
+            <button onclick="window.location.href = 'home.html';">Home</button>
+            
+            <button onclick="window.location.href = 'result3.html';"> Tới Result</button>
+        </div>
+
+        <div class="column">
+            <img src="image/tai.jpg" alt="Thành Viên 3">
+            <h3>Thành viên 2</h3>
+            <h2>Võ Tấn Tài</h2>
+            <h3>Công việc(Hoàn thành) </h3>
+            <h3>Tài tự đánh giá 30% trên 100% lượng công việc </h3>
+            <button onclick="window.location.href = 'movie.html';">Movie</button>
+            <button onclick="window.location.href = 'StyleGuide.html';">StyleGuide</button>
+            
+
+            <button onclick="window.location.href = '.html';"> Tới Result</button>
+        </div>
+
+        <div class="column">
+            <img src="image/dung.jpg" alt="Thành Viên 4">
+            <h3>Thành Viên 3</h3>
+            <h2>Bùi Thị Mỹ Dung</h2>
+            <h3>Công việc(Hoàn thành) </h3>
+            <h3>Dung tự đánh giá 33% trên 100% lượng công việc </h3>
+            <button onclick="window.location.href = 'movie.html';">Movie</button>
+            <button onclick="window.location.href = 'technical.html';">Technical</button>
+            
+            
+            <button onclick="window.location.href = 'result1.html';"> tới Result</button>
+        </div>
+    </main>
+
+    <script>
+        function showResult(memberNumber) {
+            
+            alert('Xem kết quả của Thành Viên ' + memberNumber);
+        }
+       
+    
+    function openLink(link) {
+        
+        window.open(link, '_blank');
+    }
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+
+    </script>
+
+</body>
+
+</html>

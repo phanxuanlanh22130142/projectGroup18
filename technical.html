@@ -1,0 +1,174 @@
+
+<header>
+    <div class="implementation-buttons">
+        <button onclick="openLink('home.html')">Home</button>
+        <button onclick="openLink('about.html')">About</button>
+        
+        <button onclick="openLink('technical.html')">Technical</button>
+        <button onclick="openLink('StyleGuide.html')">Style Guide</button>
+        <button onclick="openLink('groupDiary.html')">GroupDiary</button>
+      
+        <button onclick="openLink('project.html')">Project</button>
+        <button onclick="openLink('result.html')">Result</button>
+
+    </div>
+</header>
+
+<script>
+    
+    function openLink(link) {
+        
+        window.open(link, '_blank');
+    }
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+</script>
+<div class="container-xxl py-5" id="week5">
+    <div>
+        <h1>Nghiên cứu công nghệ: Viết nội dung hướng dẫn
+            sử dụng Firebase để có thể đưa một ứng dụng lên Firebase;
+            đồng thời viết hướng để tạo một domain miễn phí .tk</h1>
+        <div class="container-firebasé">
+            <h2>1. Hướng dẫn sử dụng Firebase để có thể đưa một ứng dụng lên Firebase</h2>
+            <div id=" buoc">
+                <h3>Bước 1: Tạo tài khoản Firebase:</h3>
+                <p>- Truy cập trang web của <a href="https://firebase.google.com/">Firebase</a> và đăng nhập hoặc
+                    tạo một
+                    tài
+                    khoản nếu bạn chưa có.
+                </p>
+            </div>
+            <div class=" buoc">
+                <h3>Bước 2: Tạo dự án Firebase:</h3>
+                <p>
+                    - Sau khi đăng nhập, bạn sẽ thấy một bảng điều khiển. Nhấp vào nút "Add project" hoặc "Create a
+                    project" để tạo một dự án mới trên Firebase. <br>
+                    - Điền các thông tin cần thiết như tên dự án, quốc gia, và chấp nhận các điều khoản.
+                </p>
+            </div>
+            <div class=" buoc">
+                <h3>Bước 3: Cài đặt Firebase CLI(Command Line Interface):</h3>
+                <p>
+                    - Sử dụng Firebase CLI để tương tác với Firebase từ dòng lệnh. <br>
+                    - Mở terminal (hoặc command prompt trên Windows) và chạy lệnh sau để cài đặt Firebase CLI: <br>
+                <div class="terminal-code">
+                    npm install -g firebase-tools
+                </div>
+                </p>
+            </div>
+            <div class=" buoc">
+                <h3>Bước 4: Đăng Nhập vào Firebase từ Command Line:</h3>
+                <p>
+                    - Sau khi cài đặt Firebase CLI, chạy lệnh sau trên terminal: <br>
+                <div class="terminal-code">
+                    firebase login
+                </div>
+                </p>
+            </div>
+            <div class=" buoc">
+                <h3>Bước 5: Khởi Tạo Dự Án Firebase:</h3>
+                <p>
+                    - Di chuyển đến thư mục gốc của ứng dụng của bạn trên terminal. <br>
+                    - Chạy lệnh sau để khởi tạo dự án Firebase: <br>
+                <div class="terminal-code">
+                    firebase init
+                </div>
+                </p>
+            </div>
+            <div class=" buoc">
+                <h3>Bước 6: Đưa Ứng Dụng Lên Firebase Hosting:</h3>
+                <p>
+                    - Sau khi khởi tạo dự án Firebase và cấu hình Firebase Hosting, bạn có thể đưa ứng dụng của mình
+                    lên Firebase Hosting bằng cách chạy lệnh: <br>
+                <div class="terminal-code">
+                    firebase deploy
+                </div>
+                - Firebase sẽ tạo một URL duy nhất cho ứng dụng của bạn, bạn có thể truy cập thông qua URL này
+                để xem ứng dụng đã được đưa lên thành công. <br>
+
+                </p>
+            </div>
+            <div class=" buoc">
+                <h3>Bước 7: Quản Lý Dự Án trên Firebase Console:</h3>
+                <p>
+                    - Bạn có thể quản lý dự án của mình bằng cách truy cập vào Firebase Console trên trình duyệt
+                    web. <br>
+                    - Từ đó, bạn có thể theo dõi các thống kê, quản lý cơ sở dữ liệu, quản lý các phiên bản, và thực
+                    hiện các tác vụ quản lý khác. <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-domain">
+        <h2>2. Hướng Dẫn tạo một domain miễn phí ".tk"</h2>
+        <div id=" buoc">
+            <h3> Bước 1: Truy cập Freenom:</h3>
+            <p>
+                - Mở trình duyệt web và truy cập vào trang chủ của Freenom tại <a
+                    href="https://www.freenom.com/vi/index.html?lang=vi"> www.freenom.com.</a>
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 2: Đăng kí tài khoản</h3>
+            <p>
+                - Nếu bạn chưa có tài khoản, nhấp vào nút "Sign Up" (Đăng ký) ở góc trên cùng bên phải của trang web
+                và điền vào các thông tin cần thiết để đăng ký tài khoản.
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 3: Kiểm tra tính khả dụng của tên miền:</h3>
+            <p>
+                - Sau khi đăng nhập, bạn sẽ thấy một ô tìm kiếm trên trang chủ của Freenom. Nhập tên miền bạn muốn
+                kiểm tra tính khả dụng và nhấn Enter.
+
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 4: Chọn tên miền miễn phí</h3>
+            <p>
+                - Nếu tên miền bạn chọn có sẵn, bạn sẽ thấy nút "Get it now" (Nhận ngay). Nhấp vào nút này để thêm
+                tên miền vào giỏ hàng.
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 5: Chọn thời gian sử dụng:</h3>
+            <p>
+                - Freenom cung cấp một loạt các tùy chọn thời gian sử dụng miễn phí từ 1 đến 12 tháng. Chọn thời
+                gian sử dụng phù hợp với nhu cầu của bạn.
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 6: Hoàn tất đặt hàng:</h3>
+            <p>
+                - Tiếp theo, nhấp vào nút "Checkout" (Thanh toán) để tiến hành đặt hàng.
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 7: Xác nhận thông tin:</h3>
+            <p>
+                - Điền thông tin cá nhân và thông tin thanh toán nếu được yêu cầu. Kiểm tra kỹ các thông tin trước
+                khi nhấp vào nút "Complete Order" (Hoàn tất đặt hàng).
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 8:Xác nhận đăng ký tên miền:</h3>
+            <p>
+                - Sau khi hoàn tất đặt hàng, bạn sẽ nhận được một email xác nhận từ Freenom. Hãy kiểm tra hộp thư
+                đến của bạn và làm theo hướng dẫn để xác nhận đăng ký tên miền.
+            </p>
+        </div>
+        <div id=" buoc">
+            <h3> Bước 9:Quản lý tên miền:</h3>
+            <p>
+                - Khi tên miền được đăng ký thành công, bạn có thể quản lý tên miền của mình bằng cách đăng nhập vào
+                tài khoản Freenom. Tại đây, bạn có thể thực hiện các cài đặt DNS, chuyển hướng và quản lý tên miền.
+            </p>
+        </div>
+        <div id=" buoc">
+            Lưu ý: <br>
+            - Nhớ rằng tên miền miễn phí từ Freenom có thể có một số hạn chế, như không thể chuyển tên miền trong
+            thời gian đăng ký miễn phí và hạn chế về quyền kiểm soát hoàn toàn tên miền. Tuy nhiên, chúng vẫn là lựa
+            chọn phổ biến và tiết kiệm chi phí cho nhiều dự án cá nhân và thử nghiệm.
+        </div>
+    </div>
+</div>

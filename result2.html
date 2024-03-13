@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đánh Giá Bản Thân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+      margin: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #4caf50;
+      color: white;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 0;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Chủ Đề</th>
+        <th>Đánh Giá Của Bạn</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Những Điểm Mạnh</td>
+        <td contenteditable="true" id="strengths" style="min-height: 100px;">
+          1. Cố gắn hoàn thành các công việc được giao <br>
+          2. Chăm chỉ chịu khó <br>
+          3. Thân thiện với mọi người <br>
+          4. Có khiếu sáng tạo cao
+        </td>
+      </tr>
+      <tr>
+        <td>Cần Cải Thiện</td>
+        <td contenteditable="true" id="improvements" style="min-height: 100px;">
+          1. Hoàn thành tốt các công việc được giao <br>
+          2. Cần học hỏi nhiều hơn về HTML và CSS vì chưa thành thạo tốt
+        </td>
+      </tr>
+      <tr>
+        <td>Điều Bạn Học Được</td>
+        <td contenteditable="true" id="learnings" style="min-height: 100px;">
+          1. Mình học được một bài tập nhóm một mình không thể hoàn thành hết mọi công việc <br>
+          2. Có nhiều bạn giỏi hơn mình nên mình phải học hỏi nhiều hơn nữa
+        </td>
+      </tr>
+      <tr>
+        <td>Mục Tiêu Tương Lai</td>
+        <td contenteditable="true" id="goals" style="min-height: 100px;">
+          Cố gắn hoàn thiện các điểm yếu và phát huy thế mạnh hơn nữa
+        </td>
+      </tr>
+      <tr>
+        <td>Đánh Giá Tổng Quan trong tổng 100% công việc nhóm</td>
+        <td contenteditable="true" id="overall" style="min-height: 100px;">
+          Trong suốt quá trình hoàn thành bài nhóm cùng các bạn em tự tin là mình đóng góp hơn 35% trong tổng 100% lượng công việc của nhóm
+          (trong quá trình chọn chức năng thực hiện thì minh có cho bình chọn, còn các chức  năng mới thì mình dựa vào chức năng này liên quan nhấ đến tính năng cũ của web nhóm 
+          , và sau khi mọi người làm xong thì mình phân công thì còn thừa 1 chức năng  cuối còn thừa nữa không ai nhận nên mình nhận thêm một cái )
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button onclick="submitEvaluation()">Gửi Đánh Giá</button>
+
+  <script>
+    function submitEvaluation() {
+      var strengths = document.getElementById("strengths").innerText;
+      var improvements = document.getElementById("improvements").innerText;
+      var learnings = document.getElementById("learnings").innerText;
+      var goals = document.getElementById("goals").innerText;
+      var overall = document.getElementById("overall").innerText;
+
+      
+      alert(
+        "Đánh giá của bạn:\n\n1. Những Điểm Mạnh:\n" + strengths +
+        "\n\n2. Cần Cải Thiện:\n" + improvements +
+        "\n\n3. Điều Bạn Học Được:\n" + learnings +
+        "\n\n4. Mục Tiêu Tương Lai:\n" + goals +
+        "\n\n5. Đánh Giá Tổng Quan:\n" + overall
+      );
+    }
+  </script>
+
+</body>
+
+</html>

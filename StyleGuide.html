@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .implementation-buttons button {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .design-download a:hover,
+        .implementation-buttons button:hover {
+            background-color: #297fb8;
+            cursor: pointer;
+        }
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="implementation-buttons">
+          <button onclick="openLink('home.html')">Home</button>
+          <button onclick="openLink('about.html')">About</button>
+          
+          <button onclick="openLink('technical.html')">Technical</button>
+          <button onclick="openLink('StyleGuide.html')">Style Guide</button>
+          <button onclick="openLink('groupDiary.html')">GroupDiary</button>
+        
+          <button onclick="openLink('project.html')">Project</button>
+          <button onclick="openLink('result.html')">Result</button>
+  
+      </div>
+  </header>
+    <div class="container">
+      <h1>Style guide</h1>
+      <ul>
+        <li>
+          <h3>Layout website đã sử dụng là Layout Z</h3>
+        </li>
+        <li>
+          <h3>Font chữ được sử dụng là Arial</h3>
+        </li>
+        <li>
+          <h3>Bảng màu (color palette):</h3>
+          <img src="./palette.png" alt="palette" />
+        </li>
+        <li>
+          <h3>Kích thước các image trong project:</h3>
+          <ul>
+            <li>thumbnails: 800 x 480</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Cấu trúc file:</h3>
+          <img src="./treefile.png" alt="tree files" />
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    
+      function openLink(link) {
+          
+          window.open(link, '_blank');
+      }
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  </script>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+    
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    .implementation-buttons button {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .design-download a:hover,
+        .implementation-buttons button:hover {
+            background-color: #297fb8;
+            cursor: pointer;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="implementation-buttons">
+        <button onclick="openLink('home.html')">Home</button>
+        <button onclick="openLink('about.html')">About</button>
+        
+        <button onclick="openLink('technical.html')">Technical</button>
+        <button onclick="openLink('StyleGuide.html')">Style Guide</button>
+        <button onclick="openLink('groupDiary.html')">GroupDiary</button>
+      
+        <button onclick="openLink('project.html')">Project</button>
+        <button onclick="openLink('result.html')">Result</button>
+
+    </div>
+</header>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Week4')" id="defaultOpen">Week 4</button>
+  <button class="tablinks" onclick="openTab(event, 'Week5')" id="defaultOpen">Week 5</button>
+  <button class="tablinks" onclick="openTab(event, 'Week6')" id="defaultOpen">Week 6</button>
+  <button class="tablinks" onclick="openTab(event, 'Week7')" id="defaultOpen">Week 7</button>
+  <button class="tablinks" onclick="openTab(event, 'Week8')" id="defaultOpen">Week 8</button>
+  <button class="tablinks" onclick="openTab(event, 'Week9')" id="defaultOpen">Week 9</button>
+  
+</div>
+
+<div id="Week4" class="tabcontent">
+  <h3>Week 4 </h3>
+  <div class="box">
+    <h4>Phan Xuân Lãnh</h4>
+    <ul>
+      <li>STT: 1</li>
+      <li>Tên Công Việc: Tạo trang chủ đơn giản</li>
+      <li>Người Thực Hiện:Phan Xuân Lãnh</li>
+      <li>Ngày Bắt Đầu:ngày 16 tháng 11 năm 2023 </li>
+      <li>Ngày Kết Thúc:ngày 20 tháng 11 năm 2023</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Nguyễn Thành Phước</h4>
+    <ul>
+      <li>STT:2</li>
+      <li>Tên Công Việc:Tạo  trang About đơn giản</li>
+      <li>Người Thực Hiện: Nguyễn Thành Phước</li>
+      <li>Ngày Bắt Đầu:ngày 16 tháng 11 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 20tháng 11 năm 2023</li></li>
+    </ul>
+  </div>
+</div>
+
+<div id="Week5" class="tabcontent">
+  <h3>Week 5 </h3>
+  <div class="box">
+    <h4>Phan Xuân Lãnh</h4>
+    <ul>
+      <li>STT: 1</li>
+      <li>Tên Công Việc: Tiếp tục hoàn thành trang chủ và tạo trang chức năng group_diary(phân công cho tuần 5)</li>
+      <li>Người Thực Hiện:Phan Xuân Lãnh</li>
+      <li>Ngày Bắt Đầu:ngày 26 tháng 11 năm 2023 </li>
+      <li>Ngày Kết Thúc:ngày 30 tháng 11 năm 2023</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Nguyễn Thành Phước</h4>
+    <ul>
+      <li>STT:2</li>
+      <li>Tên Công Việc:Tiếp tục hoàn thành trang About</li>
+      <li>Người Thực Hiện: Nguyễn Thành Phước</li>
+      <li>Ngày Bắt Đầu:ngày 25 tháng 11 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 30 tháng 11 năm 2023</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Võ Tấn Tài</h4>
+    <ul>
+      <li>STT:3</li>
+      <li>Tên Công Việc:Triển khai html và java Script cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Võ Tấn Tài</li>
+      <li>Ngày Bắt Đầu:ngày 25 tháng 11 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 30 tháng 11 năm 2023</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Bùi Thị Mỹ Dung</h4>
+    <ul>
+      <li>STT:4</li>
+<li>Tên Công Việc:Triển khai css cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Bùi Thị Mỹ Dung</li>
+      <li>Ngày Bắt Đầu:ngày 25 tháng 11 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 30 tháng 11 năm 2023</li></li>
+    </ul>
+  </div>
+</div>
+<div id="Week6" class="tabcontent">
+  <h3>Week 6 </h3>
+  <div class="box">
+    <h4>Phan Xuân Lãnh</h4>
+    <ul>
+      <li>STT: 1</li>
+      <li>Tên Công Việc: Tiếp tục hoàn thành trang chủ và group_diary(phân công cho tuần 6)</li>
+      <li>Người Thực Hiện:Phan Xuân Lãnh</li>
+      <li>Ngày Bắt Đầu:ngày 17 tháng 12 năm 2023 </li>
+      <li>Ngày Kết Thúc:ngày 25 tháng 12 năm 2023</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Nguyễn Thành Phước</h4>
+    <ul>
+      <li>STT:2</li>
+      <li>Tên Công Việc:Tiếp tục hoàn thành trang About</li>
+      <li>Người Thực Hiện: Nguyễn Thành Phước</li>
+      <li>Ngày Bắt Đầu:ngày 17 tháng 12 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 24 tháng 12 năm 2023</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Võ Tấn Tài</h4>
+    <ul>
+      <li>STT:3</li>
+      <li>Tên Công Việc:Triển khai html và java Script cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Võ Tấn Tài</li>
+      <li>Ngày Bắt Đầu:ngày 17 tháng 12 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 23 tháng 12 năm 2023</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Bùi Thị Mỹ Dung</h4>
+    <ul>
+      <li>STT:4</li>
+<li>Tên Công Việc:Triển khai css cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Bùi Thị Mỹ Dung</li>
+      <li>Ngày Bắt Đầu:ngày 17 tháng 12 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 14 tháng 12 năm 2023</li></li>
+    </ul>
+  </div>
+</div>
+<div id="Week8" class="tabcontent">
+  <h3>Week 8 </h3>
+  <div class="box">
+    <h4>Phan Xuân Lãnh</h4>
+    <ul>
+      <li>STT: 1</li>
+      <li>Tên Công Việc: Tiếp tục hoàn thành trang chủ( thêm các tính năng Navigations,Animations,Default settings, Guided Actions) và group_diary(phân công cho tuần 8)</li>
+      <li>Người Thực Hiện:Phan Xuân Lãnh</li>
+      <li>Ngày Bắt Đầu:ngày 4 tháng 1 năm 2024 </li>
+      <li>Ngày Kết Thúc:ngày 8 tháng 1 năm 2024</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Nguyễn Thành Phước</h4>
+    <ul>
+      <li>STT:2</li>
+      <li>Tên Công Việc:Tiếp tục hoàn thành trang About</li>
+      <li>Người Thực Hiện: Nguyễn Thành Phước</li>
+      <li>Ngày Bắt Đầu:ngày 4 tháng 1 năm 2024</li>
+     <li>Ngày Kết Thúc:ngày 8 tháng 1 năm 2024</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Võ Tấn Tài</h4>
+    <ul>
+      <li>STT:3</li>
+      <li>Tên Công Việc:Triển khai html và java Script cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Võ Tấn Tài</li>
+      <li>Ngày Bắt Đầu:ngày 4 tháng 1 năm 2024</li>
+     <li>Ngày Kết Thúc:ngày 8 tháng 1 năm 2024</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Bùi Thị Mỹ Dung</h4>
+    <ul>
+      <li>STT:4</li>
+<li>Tên Công Việc:Triển khai css cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Bùi Thị Mỹ Dung</li>
+      <li>Ngày Bắt Đầu:ngày 4 tháng 1 năm 2024</li>
+     <li>Ngày Kết Thúc:ngày 8 tháng 1 năm 2024</li></li>
+    </ul>
+  </div>
+</div>
+<div id="Week7" class="tabcontent">
+  <h3>Week 7 </h3>
+  <div class="box">
+    <h4>Phan Xuân Lãnh</h4>
+    <ul>
+      <li>STT: 1</li>
+      <li>Tên Công Việc: Tiếp tục hoàn thành trang chủ( thêm các tính năng Navigations,Animations,Default settings, Guided Actions) và group_diary(phân công cho tuần 7)</li>
+      <li>Người Thực Hiện:Phan Xuân Lãnh</li>
+      <li>Ngày Bắt Đầu:ngày 28 tháng 12 năm 2023 </li>
+      <li>Ngày Kết Thúc:ngày 3 tháng 1 năm 2024</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Nguyễn Thành Phước</h4>
+    <ul>
+      <li>STT:2</li>
+      <li>Tên Công Việc:Tiếp tục hoàn thành trang About</li>
+      <li>Người Thực Hiện: Nguyễn Thành Phước</li>
+      <li>Ngày Bắt Đầu:ngày 28 tháng 12 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 3 tháng 1 năm 2024</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Võ Tấn Tài</h4>
+    <ul>
+      <li>STT:3</li>
+      <li>Tên Công Việc:Triển khai html và java Script cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Võ Tấn Tài</li>
+      <li>Ngày Bắt Đầu:ngày 28 tháng 12 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 3 tháng 1 năm 2024</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Bùi Thị Mỹ Dung</h4>
+    <ul>
+      <li>STT:4</li>
+<li>Tên Công Việc:Triển khai css cơ bản của trang phim</li>
+      <li>Người Thực Hiện: Bùi Thị Mỹ Dung</li>
+      <li>Ngày Bắt Đầu:ngày 27 tháng 12 năm 2023</li>
+     <li>Ngày Kết Thúc:ngày 2 tháng 1 năm 2024</li></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div id="Week9" class="tabcontent">
+  <h3>Week 9 </h3>
+  <div class="box">
+    <h4>Phan Xuân Lãnh</h4>
+    <ul>
+      <li>STT: 1</li>
+      <li>Tên Công Việc: Tiếp tục hoàn thành trang chủ( thêm các tính năng Navigations,Animations,Default settings, Guided Actions) và group_diary(phân công cho tuần 9)và tạo và hoàn thành Project,Result</li>
+      <li>Người Thực Hiện:Phan Xuân Lãnh</li>
+      <li>Ngày Bắt Đầu:ngày 3 tháng 2 năm 2024 </li>
+      <li>Ngày Kết Thúc:ngày 4 tháng 2 năm 2024</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Nguyễn Thành Phước</h4>
+    <ul>
+      <li>STT:2</li>
+      <li>Tên Công Việc:Tiếp tục hoàn thành trang About và Home</li>
+      <li>Người Thực Hiện: Nguyễn Thành Phước</li>
+      <li>Ngày Bắt Đầu:ngày 3 tháng 2 năm 2024</li>
+     <li>Ngày Kết Thúc:ngày 4 tháng 2 năm 2024</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Võ Tấn Tài</h4>
+    <ul>
+      <li>STT:3</li>
+      <li>Tên Công Việc:Hoàn thành html và java Script của trang phim và Style Guide</li>
+      <li>Người Thực Hiện: Võ Tấn Tài</li>
+      <li>Ngày Bắt Đầu:ngày 3 tháng 2 năm 2024</li>
+     <li>Ngày Kết Thúc:ngày 4 tháng 2 năm 2024</li></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h4>Bùi Thị Mỹ Dung</h4>
+    <ul>
+      <li>STT:4</li>
+<li>Tên Công Việc:Hoàn thành css  của trang phim và Technical</li>
+      <li>Người Thực Hiện: Bùi Thị Mỹ Dung</li>
+      <li>Ngày Bắt Đầu:ngày 3 tháng 2 năm 2024</li>
+     <li>Ngày Kết Thúc:ngày 4 tháng 2 năm 2024</li></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+  function openTab(evt, tabName) {
+    
+    let tabContents = document.getElementsByClassName("tabcontent");
+    for (let tab of tabContents) {
+      tab.style.display = "none";
+    }
+   
+    let tabLinks = document.getElementsByClassName("tablinks");
+    for (let tablink of tabLinks) {
+      tablink.classList.remove("active");
+    }
+   
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+  }
+  document.getElementById("defaultOpen").click();  
+  
+    
+    function openLink(link) {
+        
+        window.open(link, '_blank');
+    }
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+
+</script>
+
+</body>
+</html>
